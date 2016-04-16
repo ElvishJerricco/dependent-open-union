@@ -1,0 +1,25 @@
+name:                dependent-open-union
+version:             0.1.0.0
+synopsis:            Extensible, type-safe, dependent unions.
+description:         Unions over types of kind 'k -> *'
+homepage:            https://github.com/ElvishJerricco/dependent-open-union
+license:             BSD3
+license-file:        LICENSE
+author:              Will Fancher
+maintainer:          willfancher38@gmail.com
+copyright:           2016 Will Fancher
+category:            Data
+build-type:          Simple
+-- extra-source-files:
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     Data.Dependent.OpenUnion
+  build-depends:       base >= 4.7 && < 5
+                     , dependent-sum
+  default-language:    Haskell2010
+
+source-repository head
+  type:     git
+  location: https://github.com/githubuser/dependent-open-union
